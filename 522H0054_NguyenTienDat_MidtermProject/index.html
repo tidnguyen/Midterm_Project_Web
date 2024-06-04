@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        function showMore() {
+            var moreInfo = document.getElementById("more-info");
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+            } else {
+                moreInfo.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+        <a href="#home" class="logo">Jayce.</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <nav class="taskbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>    
+            <a href="#contact">Contact me</a>
+            <a href="news.html">News</a>
+        </nav>
+    </div>
+  </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi guys, I'm Jayce</h1> 
+            <div class="text-animate">
+                <h3> Software Engineer</h3> 
+            </div>
+            <p> This is my portfolio website. It was created with HTML, CSS ans JavaScript. Please contact me If you want to get it. Have a good day!</p>
+            <div class="btn-box">
+                <a href="#contact" class="btn">Hire me</a>
+                <!-- <a href="about.html" class="btn">Show more </a> -->
+                <button onclick="showMore()" class="btn">Show More</button>
+
+            </div>
+            <div id="more-info" style="display: none;">
+                <p class="addInfo">Welcome to my portfolio website! I'm Jayce, a passionate creative with a love for art and technology. 
+                    <br></br> This website serves as a space where I showcase my creative works and projects. I particularly enjoy blending art and technology to create unique and impactful experiences.               
+                    In addition to showcasing projects, this portfolio website also serves as a platform for me to share thoughts and ideas on art and technology.           
+                    <br></br>Thank you for visiting my website, and I hope you find it both interesting and insightful!
+                </p>
+            </div>
+            
+        </div>
+
+        <div class="home-sci">
+            <a href="https://www.facebook.com/nguyentienndat">
+                <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/tiendat05/">
+                <i class="bx bxl-linkedin"></i>
+            </a>
+            <a href="https://github.com/tidnguyen">
+                <i class="bx bxl-github"></i>
+            </a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="heading"> About Me</h2>
+        <div class="about-img">
+            <img src="images/logo.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h3>Software Developer!</h3>
+            <p> I’m Jayce from Vietnam! I love programming, as well as soccer, podcast and learning new things! Feel free to get in touch or take a look at my past work below.</p>
+            <div class="btn-box btns">
+                <a href="about.html" class="btn">Show More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- education - content -->
+    <section class="education" id="education">
+        <h2 class="heading">Education</h2>
+
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Education</h3>
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar-check'></i> 2019 - 2022</div>
+                            <h3>Tam Phuoc Secondary School</h3>
+                            <p>Excellent students at all grade</p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar-check'></i> 2022 - 2026</div>
+                            <h3>Tran Van On High School </h3>
+                            <p>Excellent students at province level & graduate with GPA 9.30/10</p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar-check'></i> 2026 - 2030</div>
+                            <h3>Ton Duc Thang University</h3>
+                            <p>Sophomore Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="education-column">
+                <h3 class="title">Project</h3>
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar-check'></i> 2019 - 2022</div>
+                            <h3>Object - Oriented Programing</h3>
+                            <p>Big Assignment</p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar-check'></i> 2022 - 2026</div>
+                            <h3>Data Structures & Algorithms </h3>
+                            <p>Process a ticket & Massive Data Processing Techniques</p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar-check'></i> 2026 - 2030</div>
+                            <h3>Probability & Statistics</h3>
+                            <p> Survey about Histogram equalization and Histogram matching algorithms for image processing </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact - content-->
+    <section class="contact" id="contact">
+        <h2 class="headings">Contact Me</h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="text" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10">Your Message</textarea>
+            <input type="submit" value="Send Message" class="btn-Sen">
+        </form>
+    </section>
+
+    <!-- footer - content -->
+    <footer class="footer">
+        <div class="footer-text">
+        <p>Copyright &copy; 2024 by Jayce | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#">
+                <i class="bx bx-up-arrow-alt"></i>
+            </a>
+        </div>
+    </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
